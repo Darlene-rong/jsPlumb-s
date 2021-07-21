@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jsPlumbDemo</title>
+  <link rel="stylesheet" src="file/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+  <link rel="stylesheet" href="./file/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">jsPlumbDemo</a>
+        </div>
+      </div>
+    </nav>
+    <div class="main clear-float">
+      <!-- node -->
+      <div class="left-panel">
+        <button type="button" class="btn btn-primary mb-10 mr-10" onclick="jsplumbDeom.activeModel('block')">新增节点</button>
+        <div class="sourceContainer">
+          <div data-type="oneUI" class="panel panel-info diagram-panel">
+            <div class="panel-heading">interfaceData
+            <span title="删除节点" class="glyphicon glyphicon-remove-circle icon removeIcon"></span>
+            </div>
+            <div class="panel-body">
+            decriptionData
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- jsplumb-canvas -->
+      <div class="right-panel targetContainer clear-float">
+      </div>
+    </div> 
+    <div class="main-btn">
+      <button type="button" class="btn btn-primary" onclick="jsplumbDeom.savePlumb()">保存节点图</button>
+    </div>
+    <!-- dialog -->
+    <div id="dialog" class="add_panel"  title="新增节点">
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="position:relative">新增节点
+          <span class="glyphicon glyphicon-remove-circle icon" onclick="jsplumbDeom.activeModel('none')"></span>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            <label for="exampleInputEmail1">接口名：</label>
+            <input type="interfaceName" class="form-control" id="interfaceName">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">描述：</label>
+            <input type="decription" class="form-control" id="decription">
+          </div>
+          <div style="text-align: center;">
+            <button class="btn btn-primary" onclick="jsplumbDeom.addModel()">新增</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- dialog-model -->
+    <div class="dialog_model"></div> 
+  </div>
+
+
+
+  <script></script>
+  <script src="https://cdn.bootcss.com/node-uuid/1.4.8/uuid.min.js"></script>
+  <script src="file/jquery-3.6.0.js"></script>
+  <script src="file/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <script src="file/jsplumb.js"></script>
+  <script src="file/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+  <script src='js/config.js'></script>
+  <script src='index.js'></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "lineList": [
+    {
+      "connectType": "企鹅请问",    
+      "isAction": 0,
+      "source":{
+        "anchor": "Continuous",
+        "id": "500da418-7594-48e5-8626-df74a457a3a2"
+      },
+      "target":{
+        "anchor": "Continuous",
+        "id": "4db6c779-da14-47d3-b690-1437490a6ae6"
+      }
+    },
+    {
+      "connectType": "企鹅aa请问",
+      "isAction": 1,
+      "source":{
+        "anchor": "Continuous",
+        "id": "500da418-7594-48e5-8626-df74a457a3a2"
+      },
+      "target":{
+        "anchor": "Continuous",
+        "id": "0d31e013-4483-4961-a245-bb699b8a39df"
+      }
+    }
+  ],
+  "nodeList": [
+    {
+      "decriptionData": "\n            adasdaa发个哈哈哈\n            ",
+      "id": "500da418-7594-48e5-8626-df74a457a3a2",
+      "interfaceData": "interfaceData\n            \n            ",
+      "left": 62,
+      "top": 93
+    },
+    {
+      "decriptionData": "\n            decriptionData\n            ",
+      "id": "4db6c779-da14-47d3-b690-1437490a6ae6",
+      "interfaceData": "interfaceData\n            \n            ",
+      "left": 102,
+      "top": 261
+    },
+    {
+      "decriptionData": "\n            decriptionData\n            ",
+      "id": "0d31e013-4483-4961-a245-bb699b8a39df",
+      "interfaceData": "interfaceData\n            \n            ",
+      "left": 471,
+      "top": 378
+    }
+  ]
+}
