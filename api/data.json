@@ -2,48 +2,36 @@
   "lineList": [
     {
       "connectType": "企鹅请问",    
-      "isAction": 0,
-      "source":{
-        "anchor": "Continuous",
-        "id": "500da418-7594-48e5-8626-df74a457a3a2"
-      },
-      "target":{
-        "anchor": "Continuous",
-        "id": "4db6c779-da14-47d3-b690-1437490a6ae6"
-      }
+      "isAction": true,
+      "sourceId": "500da418-7594-48e5-8626-df74a457a3a2",
+      "targetId": "4db6c779-da14-47d3-b690-1437490a6ae6"
     },
     {
       "connectType": "企鹅aa请问",
-      "isAction": 1,
-      "source":{
-        "anchor": "Continuous",
-        "id": "500da418-7594-48e5-8626-df74a457a3a2"
-      },
-      "target":{
-        "anchor": "Continuous",
-        "id": "0d31e013-4483-4961-a245-bb699b8a39df"
-      }
+      "isAction": false,
+      "sourceId": "500da418-7594-48e5-8626-df74a457a3a2",
+      "targetId": "0d31e013-4483-4961-a245-bb699b8a39df"
     }
   ],
   "nodeList": [
     {
-      "decriptionData": "\n            adasdaa发个哈哈哈\n            ",
+      "decriptionData": "adasdaa发个哈哈哈",
       "id": "500da418-7594-48e5-8626-df74a457a3a2",
-      "interfaceData": "interfaceData\n            \n            ",
+      "interfaceData": "my_function/hello1",
       "left": 62,
       "top": 93
     },
     {
-      "decriptionData": "\n            decriptionData\n            ",
+      "decriptionData": "decriptionData",
       "id": "4db6c779-da14-47d3-b690-1437490a6ae6",
-      "interfaceData": "interfaceData\n            \n            ",
+      "interfaceData": "my_function/hello2",
       "left": 102,
       "top": 261
     },
     {
-      "decriptionData": "\n            decriptionData\n            ",
+      "decriptionData": "decriptionData",
       "id": "0d31e013-4483-4961-a245-bb699b8a39df",
-      "interfaceData": "interfaceData\n            \n            ",
+      "interfaceData": "my_function/hello3",
       "left": 471,
       "top": 378
     }

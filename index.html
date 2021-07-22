@@ -11,20 +11,20 @@
 </head>
 <body>
   <div>
-    <nav class="navbar navbar-default">
+    <!-- <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">jsPlumbDemo</a>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <div class="main clear-float">
       <!-- node -->
       <div class="left-panel">
         <button type="button" class="btn btn-primary mb-10 mr-10" onclick="jsplumbDeom.activeModel('block')">新增节点</button>
         <div class="sourceContainer">
-          <div data-type="oneUI" class="panel panel-info diagram-panel">
-            <div class="panel-heading">interfaceData
+          <div data-type="oneUI" class="panel panel-info diagram-panel" style="position: relative;margin:10px">
+            <div class="panel-heading" style="width: 120px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">interfaceData
             <span title="删除节点" class="glyphicon glyphicon-remove-circle icon removeIcon"></span>
             </div>
             <div class="panel-body">
@@ -38,7 +38,19 @@
       </div>
     </div> 
     <div class="main-btn">
-      <button type="button" class="btn btn-primary" onclick="jsplumbDeom.savePlumb()">保存节点图</button>
+      <div style="position: relative;display: flex;">
+        <select id="saveselect"  class="form-control" style="margin-right: 10px; width: 120px;"> 
+          <option style="display: none; color: #b5b2b2 !important;">请选择保存类型</option> 
+        </select>
+        <button type="button" class="btn btn-primary" onclick="jsplumbDeom.savePlumb()">保存节点图</button>
+      </div>
+    </div>
+    <div class="main-search">
+      <select id="searchselect" class="form-control" style="margin-right: 10px;"> 
+        <option style="display: none; color: #b5b2b2 !important;">请选择事件类型</option> 
+      </select>
+      <button type="button" class="btn btn-warning" onclick="jsplumbDeom.selectInit()">查询节点图</button>
+
     </div>
     <!-- dialog -->
     <div id="dialog" class="add_panel"  title="新增节点">

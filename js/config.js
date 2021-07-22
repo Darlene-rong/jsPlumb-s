@@ -16,35 +16,42 @@ containerConfig.actionConnect = {
 }
 // 鼠标悬浮在连接线上的样式
 containerConfig.baseStyle = {
-  endpoint: ['Dot', { radius: 2 }],
+  endpoint: ["Dot", {radius: 2}],
   connectorStyle: containerConfig.normalConnect, // 连接线的颜色，大小样式
+  connectorHoverStyle: containerConfig.connectorHoverStyle,
   paintStyle: {
     strokeStyle: 'rgb(92, 150, 188)',
     stroke: 'rgb(92, 150, 188)',
     fill: 'rgb(92, 150, 188)',
-    radius: 3,
-    lineWidth: 2,
-  },
-  // 端点的颜色样式
-  hoverPaintStyle: { stroke: '#1e8151', strokeWidth: 1 },
+    radius: 4,
+    lineWidth: 2
+  }, // 端点的颜色样式
+  hoverPaintStyle: { stroke: "#1e8151", strokeWidth: 1 },
   isSource: true, // 是否可以拖动（作为连线起点）
-  connector: ['StateMachine'], // 弧线
+  connector: ['StateMachine'],  // 弧线
   isTarget: true, // 是否可以放置（连线终点）
-  maxConnections: -1, // 设置连接点最多可以连接几条线
+  maxConnections: 5, // 设置连接点最多可以连接几条线
   // 设置线上面的箭头
   connectorOverlays: [
-    ['Arrow', {
-      width: 10,
-      length: 10,
-      location: 0.7
-    }],
-    ['Label', {
-      label: '',
-      cssClass: '',
-      labelStyle: {
-        color: 'red'
+    [ "Arrow", {
+      location: 1,
+      id: "arrow",
+      length: 14,
+      foldback: 0.6
+  } ],
+  [ "Label", { label: "", id: "label", cssClass: "aLabel",
+        events: {
+        // dblclick: function (labelOverlay, originalEvent) {
+        //   console.log('click on label overlay for :' + labelOverlay.component)
+        //   console.log(labelOverlay,labelOverlay.labelText)
+        //   console.log(originalEvent)
+        //   var labelRes = prompt("请输入条件", labelOverlay.labelText);
+        //   if(labelRes) {
+        //     labelOverlay.labelText = labelRes;
+        //   }
+        // }
       }
-    }]
+ }]
   ]
 }
 
